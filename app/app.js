@@ -3,11 +3,11 @@ const app = express();
 //const PORT = 3001;// app.listen 모듈로 이동
 
 //앱 세팅
-app.set("views", "./views")
+app.set("views", "./src/views")
 app.set("view engine", "ejs")
 
 // 라우팅
-const home = require("./routes/home")   
+const home = require("./src/routes/home")   
 app.use("/", home);                     // use는 미들웨어를 등록해주는 메소드
 
 /* app.listen(PORT, () => {
